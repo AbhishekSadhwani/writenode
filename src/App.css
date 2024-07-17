@@ -1,38 +1,170 @@
-.App {
+/* ****** Header ****** */
+
+header{
+  height: 70px;
+  padding: 10px;
+  border-bottom: 1px solid #F2EBE9;
+  display: flex;
+  color: #000000;
+  justify-content: space-between;
+}
+
+header img{
+  max-width: 40px;
+}
+
+header .link{
+  display: flex;
+  align-items: center;
+}
+
+header .link .title{
+  font-size: 20px;
+  padding: 5px;
+}
+
+.nav-items{
+  display: flex;
+  align-items: center;
+}
+
+.nav-items .link{
+  padding: 10px;
+}
+
+.nav-items .link.active{
+  background-color: #F2EBE9;
+  border-radius: 5px;
+}
+
+.nav-items .auth-button{
+  position: relative;
+  font-size: 16px;
+  background-color: #1C59AE;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.nav-items .auth-button i{
+  position: relative;
+  bottom: 3px;
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+.nav-items .link.hidden{
+  display: none;
+}
+
+/* ****** Footer ****** */
+footer{
   text-align: center;
+  font-size: 16px;
+  border-top: 1px solid #F2EBE9;
+  padding: 22px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ****** PostCard ****** */
+
+.post-card{
+  box-shadow: 0 1px 4px #f2ebe9;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-card .heading{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.post-card .content{
+  margin: 20px 5px;
+}
+
+.post-card .author{
+  margin: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-card span{
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #EEF2F9;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* ****** Create Page ****** */
+.add-post{
+  text-align: center;
+  margin: 20px 0;
+}
+
+.add-post h1{
+  font-size: 33px;
+}
+
+.add-form{
+  max-width: 700px;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.add-form input, .add-form textarea{
+  font-size: 20px;
+  border: none;
+  box-shadow: 0 1px 4px #f2ebe9;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-form textarea{
+  height: 300px;
+}
+
+.add-form button{
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #5FD068;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+}
+
+/* ****** PNF ****** */
+.pnf{
+  text-align: center;
+  width: 500px;
+  margin: auto;
+}
+
+.pnf p{
+  font-size: 24px;
+  font-weight: 500;
+  margin: 15px auto;
+}
+
+.pnf img{
+  width: 100%;
+  border-radius: 5px;
+  margin: 25px auto 15px ;
+}
+
+.pnf button{
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #1C59AE;
+  padding: 10px 20px;
+  margin-left: 10px;
 }
