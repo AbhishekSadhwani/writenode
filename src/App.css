@@ -55,10 +55,6 @@ header .link .title{
   font-size: 14px;
 }
 
-.nav-items .link.hidden{
-  display: none;
-}
-
 /* ****** Footer ****** */
 footer{
   text-align: center;
@@ -86,18 +82,25 @@ footer{
   margin: 20px 5px;
 }
 
-.post-card .author{
+.post-card .control{
   margin: 20px 5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.post-card span{
+.post-card .control .author{
   font-size: 14px;
   font-weight: 500;
   background-color: #EEF2F9;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.post-card .control .delete{
+  color: #ff0000;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
 
 /* ****** Create Page ****** */
